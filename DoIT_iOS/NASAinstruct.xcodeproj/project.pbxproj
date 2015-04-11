@@ -21,6 +21,8 @@
 		A539ADFF1AD9AF8300196542 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539ADFD1AD9AF8300196542 /* Interface.storyboard */; };
 		A539AE011AD9AF8300196542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A539AE001AD9AF8300196542 /* Images.xcassets */; };
 		A539AE041AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5DF33231AD9DA5800E16FB4 /* TutorialStepInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */; };
+		A5DF33261AD9E5CE00E16FB4 /* DoITListRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,10 @@
 		A539ADFC1AD9AF8300196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A539ADFE1AD9AF8300196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A539AE001AD9AF8300196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5DF33211AD9DA5800E16FB4 /* TutorialStepInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialStepInterfaceController.h; sourceTree = "<group>"; };
+		A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialStepInterfaceController.m; sourceTree = "<group>"; };
+		A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoITListRowType.h; sourceTree = "<group>"; };
+		A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoITListRowType.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,10 @@
 			children = (
 				A539ADEC1AD9AF8300196542 /* InterfaceController.h */,
 				A539ADED1AD9AF8300196542 /* InterfaceController.m */,
+				A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */,
+				A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */,
+				A5DF33211AD9DA5800E16FB4 /* TutorialStepInterfaceController.h */,
+				A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */,
 				A539ADEF1AD9AF8300196542 /* NotificationController.h */,
 				A539ADF01AD9AF8300196542 /* NotificationController.m */,
 				A539ADF21AD9AF8300196542 /* Images.xcassets */,
@@ -398,6 +408,8 @@
 			files = (
 				A539ADF11AD9AF8300196542 /* NotificationController.m in Sources */,
 				A539ADEE1AD9AF8300196542 /* InterfaceController.m in Sources */,
+				A5DF33261AD9E5CE00E16FB4 /* DoITListRowType.m in Sources */,
+				A5DF33231AD9DA5800E16FB4 /* TutorialStepInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +674,7 @@
 				A539ADDF1AD9AF4D00196542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A539ADE01AD9AF4D00196542 /* Build configuration list for PBXNativeTarget "NASAinstructTests" */ = {
 			isa = XCConfigurationList;
@@ -670,6 +683,7 @@
 				A539ADE21AD9AF4D00196542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A539AE051AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +692,7 @@
 				A539AE071AD9AF8300196542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A539AE081AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +701,7 @@
 				A539AE0A1AD9AF8300196542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

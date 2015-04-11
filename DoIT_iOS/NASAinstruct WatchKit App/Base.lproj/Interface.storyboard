@@ -10,12 +10,24 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="NASAinstruct" id="qRA-3B-w1q"/>
+                        <label alignment="left" text="DoIT" id="qRA-3B-w1q"/>
                         <separator alignment="left" id="JQk-e9-Rxj"/>
                         <table alignment="left" id="TNT-mF-NXP">
                             <items>
-                                <tableRow id="13w-RJ-DjX">
-                                    <group key="rootItem" width="1" alignment="left" id="vF2-ak-qqh"/>
+                                <tableRow identifier="doITListRowType" id="13w-RJ-DjX" customClass="DoITListRowType">
+                                    <group key="rootItem" width="1" alignment="left" id="vF2-ak-qqh">
+                                        <items>
+                                            <imageView width="35" alignment="left" image="highfive" id="PU6-v4-VJk"/>
+                                            <label alignment="left" text="IKEA" id="edv-w5-aR6"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="iEg-de-eMf" kind="push" id="Ptf-zB-BM3"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowDescription" destination="edv-w5-aR6" id="Ft2-ic-hML"/>
+                                        <outlet property="rowIcon" destination="PU6-v4-VJk" id="wrc-YZ-hJm"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
@@ -25,14 +37,17 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="TNT-mF-NXP" id="Ntk-m3-2Ia"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Tutorial Step Interface Controller-->
         <scene sceneID="4BX-wY-Sit">
             <objects>
-                <controller id="iEg-de-eMf">
+                <controller id="iEg-de-eMf" customClass="TutorialStepInterfaceController">
                     <items>
                         <label alignment="left" text="Remove film" id="rsD-ES-shH"/>
                         <separator alignment="left" id="R8x-Cd-V5k"/>
@@ -42,9 +57,13 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="instructionImageButton" destination="Xaq-vx-tLN" id="uae-m7-F9q"/>
+                        <outlet property="instructionTitle" destination="rsD-ES-shH" id="dJs-A3-4TA"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="417" y="353"/>
+            <point key="canvasLocation" x="423" y="360"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="SO4-NC-Wms">
@@ -138,4 +157,7 @@
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ptf-zB-BM3"/>
+    </inferredMetricsTieBreakers>
 </document>

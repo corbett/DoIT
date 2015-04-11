@@ -11,5 +11,7 @@
 
 @interface InterfaceController : WKInterfaceController
 
+@property (nonatomic,strong) NSArray* tutorialNames;
+@property (nonatomic,weak) IBOutlet WKInterfaceTable *table;
 -(IBAction)goToRootController:(id)sender ;
 @end
