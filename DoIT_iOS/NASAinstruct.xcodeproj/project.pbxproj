@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A539ADC01AD9AF4D00196542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADBF1AD9AF4D00196542 /* main.m */; };
+		A539ADC31AD9AF4D00196542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADC21AD9AF4D00196542 /* AppDelegate.m */; };
+		A539ADC61AD9AF4D00196542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADC51AD9AF4D00196542 /* ViewController.m */; };
+		A539ADC91AD9AF4D00196542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539ADC71AD9AF4D00196542 /* Main.storyboard */; };
+		A539ADCB1AD9AF4D00196542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A539ADCA1AD9AF4D00196542 /* Images.xcassets */; };
+		A539ADCE1AD9AF4D00196542 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A539ADCC1AD9AF4D00196542 /* LaunchScreen.xib */; };
+		A539ADDA1AD9AF4D00196542 /* NASAinstructTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADD91AD9AF4D00196542 /* NASAinstructTests.m */; };
+		A539ADEE1AD9AF8300196542 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADED1AD9AF8300196542 /* InterfaceController.m */; };
+		A539ADF11AD9AF8300196542 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539ADF01AD9AF8300196542 /* NotificationController.m */; };
+		A539ADF31AD9AF8300196542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A539ADF21AD9AF8300196542 /* Images.xcassets */; };
+		A539ADF71AD9AF8300196542 /* NASAinstruct WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A539ADF61AD9AF8300196542 /* NASAinstruct WatchKit App.app */; };
+		A539ADFF1AD9AF8300196542 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539ADFD1AD9AF8300196542 /* Interface.storyboard */; };
+		A539AE011AD9AF8300196542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A539AE001AD9AF8300196542 /* Images.xcassets */; };
+		A539AE041AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A539ADD41AD9AF4D00196542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A539ADB21AD9AF4D00196542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539ADB91AD9AF4D00196542;
+			remoteInfo = NASAinstruct;
+		};
+		A539ADF81AD9AF8300196542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A539ADB21AD9AF4D00196542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539ADF51AD9AF8300196542;
+			remoteInfo = "NASAinstruct WatchKit App";
+		};
+		A539AE021AD9AF8300196542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A539ADB21AD9AF4D00196542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539ADE61AD9AF8300196542;
+			remoteInfo = "NASAinstruct WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A539AE0B1AD9AF8300196542 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A539AE041AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A539ADBA1AD9AF4D00196542 /* NASAinstruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAinstruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539ADBE1AD9AF4D00196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539ADBF1AD9AF4D00196542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A539ADC11AD9AF4D00196542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A539ADC21AD9AF4D00196542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A539ADC41AD9AF4D00196542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A539ADC51AD9AF4D00196542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A539ADC81AD9AF4D00196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A539ADCA1AD9AF4D00196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A539ADCD1AD9AF4D00196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A539ADD31AD9AF4D00196542 /* NASAinstructTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAinstructTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539ADD81AD9AF4D00196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539ADD91AD9AF4D00196542 /* NASAinstructTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NASAinstructTests.m; sourceTree = "<group>"; };
+		A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NASAinstruct WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539ADEA1AD9AF8300196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539ADEB1AD9AF8300196542 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A539ADEC1AD9AF8300196542 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		A539ADED1AD9AF8300196542 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		A539ADEF1AD9AF8300196542 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		A539ADF01AD9AF8300196542 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		A539ADF21AD9AF8300196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A539ADF61AD9AF8300196542 /* NASAinstruct WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASAinstruct WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539ADFC1AD9AF8300196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539ADFE1AD9AF8300196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A539AE001AD9AF8300196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A539ADB71AD9AF4D00196542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADD01AD9AF4D00196542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADE41AD9AF8300196542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A539ADB11AD9AF4D00196542 = {
+			isa = PBXGroup;
+			children = (
+				A539ADBC1AD9AF4D00196542 /* NASAinstruct */,
+				A539ADD61AD9AF4D00196542 /* NASAinstructTests */,
+				A539ADE81AD9AF8300196542 /* NASAinstruct WatchKit Extension */,
+				A539ADFA1AD9AF8300196542 /* NASAinstruct WatchKit App */,
+				A539ADBB1AD9AF4D00196542 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A539ADBB1AD9AF4D00196542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADBA1AD9AF4D00196542 /* NASAinstruct.app */,
+				A539ADD31AD9AF4D00196542 /* NASAinstructTests.xctest */,
+				A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */,
+				A539ADF61AD9AF8300196542 /* NASAinstruct WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A539ADBC1AD9AF4D00196542 /* NASAinstruct */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADC11AD9AF4D00196542 /* AppDelegate.h */,
+				A539ADC21AD9AF4D00196542 /* AppDelegate.m */,
+				A539ADC41AD9AF4D00196542 /* ViewController.h */,
+				A539ADC51AD9AF4D00196542 /* ViewController.m */,
+				A539ADC71AD9AF4D00196542 /* Main.storyboard */,
+				A539ADCA1AD9AF4D00196542 /* Images.xcassets */,
+				A539ADCC1AD9AF4D00196542 /* LaunchScreen.xib */,
+				A539ADBD1AD9AF4D00196542 /* Supporting Files */,
+			);
+			path = NASAinstruct;
+			sourceTree = "<group>";
+		};
+		A539ADBD1AD9AF4D00196542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADBE1AD9AF4D00196542 /* Info.plist */,
+				A539ADBF1AD9AF4D00196542 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A539ADD61AD9AF4D00196542 /* NASAinstructTests */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADD91AD9AF4D00196542 /* NASAinstructTests.m */,
+				A539ADD71AD9AF4D00196542 /* Supporting Files */,
+			);
+			path = NASAinstructTests;
+			sourceTree = "<group>";
+		};
+		A539ADD71AD9AF4D00196542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADD81AD9AF4D00196542 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A539ADE81AD9AF8300196542 /* NASAinstruct WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADEC1AD9AF8300196542 /* InterfaceController.h */,
+				A539ADED1AD9AF8300196542 /* InterfaceController.m */,
+				A539ADEF1AD9AF8300196542 /* NotificationController.h */,
+				A539ADF01AD9AF8300196542 /* NotificationController.m */,
+				A539ADF21AD9AF8300196542 /* Images.xcassets */,
+				A539ADE91AD9AF8300196542 /* Supporting Files */,
+			);
+			path = "NASAinstruct WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A539ADE91AD9AF8300196542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADEA1AD9AF8300196542 /* Info.plist */,
+				A539ADEB1AD9AF8300196542 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A539ADFA1AD9AF8300196542 /* NASAinstruct WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADFD1AD9AF8300196542 /* Interface.storyboard */,
+				A539AE001AD9AF8300196542 /* Images.xcassets */,
+				A539ADFB1AD9AF8300196542 /* Supporting Files */,
+			);
+			path = "NASAinstruct WatchKit App";
+			sourceTree = "<group>";
+		};
+		A539ADFB1AD9AF8300196542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539ADFC1AD9AF8300196542 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A539ADB91AD9AF4D00196542 /* NASAinstruct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539ADDD1AD9AF4D00196542 /* Build configuration list for PBXNativeTarget "NASAinstruct" */;
+			buildPhases = (
+				A539ADB61AD9AF4D00196542 /* Sources */,
+				A539ADB71AD9AF4D00196542 /* Frameworks */,
+				A539ADB81AD9AF4D00196542 /* Resources */,
+				A539AE0B1AD9AF8300196542 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A539AE031AD9AF8300196542 /* PBXTargetDependency */,
+			);
+			name = NASAinstruct;
+			productName = NASAinstruct;
+			productReference = A539ADBA1AD9AF4D00196542 /* NASAinstruct.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A539ADD21AD9AF4D00196542 /* NASAinstructTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539ADE01AD9AF4D00196542 /* Build configuration list for PBXNativeTarget "NASAinstructTests" */;
+			buildPhases = (
+				A539ADCF1AD9AF4D00196542 /* Sources */,
+				A539ADD01AD9AF4D00196542 /* Frameworks */,
+				A539ADD11AD9AF4D00196542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A539ADD51AD9AF4D00196542 /* PBXTargetDependency */,
+			);
+			name = NASAinstructTests;
+			productName = NASAinstructTests;
+			productReference = A539ADD31AD9AF4D00196542 /* NASAinstructTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A539ADE61AD9AF8300196542 /* NASAinstruct WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539AE081AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit Extension" */;
+			buildPhases = (
+				A539ADE31AD9AF8300196542 /* Sources */,
+				A539ADE41AD9AF8300196542 /* Frameworks */,
+				A539ADE51AD9AF8300196542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A539ADF91AD9AF8300196542 /* PBXTargetDependency */,
+			);
+			name = "NASAinstruct WatchKit Extension";
+			productName = "NASAinstruct WatchKit Extension";
+			productReference = A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A539ADF51AD9AF8300196542 /* NASAinstruct WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539AE051AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit App" */;
+			buildPhases = (
+				A539ADF41AD9AF8300196542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NASAinstruct WatchKit App";
+			productName = "NASAinstruct WatchKit App";
+			productReference = A539ADF61AD9AF8300196542 /* NASAinstruct WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A539ADB21AD9AF4D00196542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Corbett;
+				TargetAttributes = {
+					A539ADB91AD9AF4D00196542 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A539ADD21AD9AF4D00196542 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A539ADB91AD9AF4D00196542;
+					};
+					A539ADE61AD9AF8300196542 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A539ADF51AD9AF8300196542 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = A539ADB51AD9AF4D00196542 /* Build configuration list for PBXProject "NASAinstruct" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A539ADB11AD9AF4D00196542;
+			productRefGroup = A539ADBB1AD9AF4D00196542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A539ADB91AD9AF4D00196542 /* NASAinstruct */,
+				A539ADD21AD9AF4D00196542 /* NASAinstructTests */,
+				A539ADE61AD9AF8300196542 /* NASAinstruct WatchKit Extension */,
+				A539ADF51AD9AF8300196542 /* NASAinstruct WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A539ADB81AD9AF4D00196542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADC91AD9AF4D00196542 /* Main.storyboard in Resources */,
+				A539ADCE1AD9AF4D00196542 /* LaunchScreen.xib in Resources */,
+				A539ADCB1AD9AF4D00196542 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADD11AD9AF4D00196542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADE51AD9AF8300196542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADF31AD9AF8300196542 /* Images.xcassets in Resources */,
+				A539ADF71AD9AF8300196542 /* NASAinstruct WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADF41AD9AF8300196542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADFF1AD9AF8300196542 /* Interface.storyboard in Resources */,
+				A539AE011AD9AF8300196542 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A539ADB61AD9AF4D00196542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADC61AD9AF4D00196542 /* ViewController.m in Sources */,
+				A539ADC31AD9AF4D00196542 /* AppDelegate.m in Sources */,
+				A539ADC01AD9AF4D00196542 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADCF1AD9AF4D00196542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADDA1AD9AF4D00196542 /* NASAinstructTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539ADE31AD9AF8300196542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539ADF11AD9AF8300196542 /* NotificationController.m in Sources */,
+				A539ADEE1AD9AF8300196542 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A539ADD51AD9AF4D00196542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539ADB91AD9AF4D00196542 /* NASAinstruct */;
+			targetProxy = A539ADD41AD9AF4D00196542 /* PBXContainerItemProxy */;
+		};
+		A539ADF91AD9AF8300196542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539ADF51AD9AF8300196542 /* NASAinstruct WatchKit App */;
+			targetProxy = A539ADF81AD9AF8300196542 /* PBXContainerItemProxy */;
+		};
+		A539AE031AD9AF8300196542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539ADE61AD9AF8300196542 /* NASAinstruct WatchKit Extension */;
+			targetProxy = A539AE021AD9AF8300196542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A539ADC71AD9AF4D00196542 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A539ADC81AD9AF4D00196542 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A539ADCC1AD9AF4D00196542 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A539ADCD1AD9AF4D00196542 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A539ADFD1AD9AF8300196542 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A539ADFE1AD9AF8300196542 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A539ADDB1AD9AF4D00196542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A539ADDC1AD9AF4D00196542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A539ADDE1AD9AF4D00196542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NASAinstruct/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A539ADDF1AD9AF4D00196542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NASAinstruct/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A539ADE11AD9AF4D00196542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NASAinstructTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASAinstruct.app/NASAinstruct";
+			};
+			name = Debug;
+		};
+		A539ADE21AD9AF4D00196542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NASAinstructTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASAinstruct.app/NASAinstruct";
+			};
+			name = Release;
+		};
+		A539AE061AD9AF8300196542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = NASAinstruct_WatchKit_Extension;
+				INFOPLIST_FILE = "NASAinstruct WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A539AE071AD9AF8300196542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = NASAinstruct_WatchKit_Extension;
+				INFOPLIST_FILE = "NASAinstruct WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A539AE091AD9AF8300196542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NASAinstruct WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A539AE0A1AD9AF8300196542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "NASAinstruct WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A539ADB51AD9AF4D00196542 /* Build configuration list for PBXProject "NASAinstruct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539ADDB1AD9AF4D00196542 /* Debug */,
+				A539ADDC1AD9AF4D00196542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A539ADDD1AD9AF4D00196542 /* Build configuration list for PBXNativeTarget "NASAinstruct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539ADDE1AD9AF4D00196542 /* Debug */,
+				A539ADDF1AD9AF4D00196542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A539ADE01AD9AF4D00196542 /* Build configuration list for PBXNativeTarget "NASAinstructTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539ADE11AD9AF4D00196542 /* Debug */,
+				A539ADE21AD9AF4D00196542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A539AE051AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539AE061AD9AF8300196542 /* Debug */,
+				A539AE071AD9AF8300196542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A539AE081AD9AF8300196542 /* Build configuration list for PBXNativeTarget "NASAinstruct WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539AE091AD9AF8300196542 /* Debug */,
+				A539AE0A1AD9AF8300196542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A539ADB21AD9AF4D00196542 /* Project object */;
+}
