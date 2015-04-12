@@ -61,6 +61,9 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    for(Tutorial* tut in self.tutorials) {
+        [tut reset];
+    }
 }
 
 - (void)didDeactivate {
