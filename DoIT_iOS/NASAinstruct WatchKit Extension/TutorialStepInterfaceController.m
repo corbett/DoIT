@@ -10,7 +10,6 @@
 #import "Tutorial.h"
 #import "TutorialStep.h"
 @interface TutorialStepInterfaceController ()
-
 @end
 
 @implementation TutorialStepInterfaceController
@@ -33,12 +32,12 @@
     }
 
     _synth = [[AVSpeechSynthesizer alloc] init];
+    _synth.delegate = self;
     
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:tutorialStep.instruction];
-    
-    [utterance setRate:0.2];
-    [_synth speakUtterance:utterance];
-
+    _utterance = [AVSpeechUtterance speechUtteranceWithString:tutorialStep.instruction];
+    [_utterance setRate:0.2];
+    [_synth speakUtterance:_utterance];
+    [_playPauseButton setBackgroundImageNamed:@"pause"];
 }
 
 - (IBAction)goToNextTutorial:(id)sender  {
@@ -59,8 +58,37 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
-    
     [super willActivate];
+}
+
+-(IBAction)playPauseOrUnpause:(id)sender {
+    if(_synth.isPaused) {
+        [_synth continueSpeaking];
+    }
+    else if(_synth.isSpeaking) {
+        [_synth pauseSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    }
+    else {
+        [_synth speakUtterance:_utterance];
+    }
+}
+
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance {
+    [_playPauseButton setBackgroundImageNamed:@"play"];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
+  didPauseSpeechUtterance:(AVSpeechUtterance *)utterance {
+     [_playPauseButton setBackgroundImageNamed:@"play"];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didContinueSpeechUtterance:(AVSpeechUtterance *)utterance {
+    [_playPauseButton setBackgroundImageNamed:@"pause"];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance {
+    [_playPauseButton setBackgroundImageNamed:@"pause"];
 }
 
 

@@ -57,7 +57,11 @@
                         </button>
                         <group width="1" alignment="left" verticalAlignment="bottom" id="GTC-8W-cm2">
                             <items>
-                                <button width="45" height="40" alignment="center" verticalAlignment="center" backgroundImage="speaker-active" id="UlM-9x-VRO"/>
+                                <button width="45" height="40" alignment="center" verticalAlignment="center" backgroundImage="play" id="UlM-9x-VRO">
+                                    <connections>
+                                        <action selector="playPauseOrUnpause:" destination="iEg-de-eMf" id="YIH-kS-PoV"/>
+                                    </connections>
+                                </button>
                                 <label alignment="right" verticalAlignment="bottom" text="Label" id="qxJ-CK-mGA">
                                     <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
@@ -70,6 +74,7 @@
                         <outlet property="instructionImageButton" destination="Xaq-vx-tLN" id="uae-m7-F9q"/>
                         <outlet property="instructionStep" destination="qxJ-CK-mGA" id="ZuJ-N0-QjU"/>
                         <outlet property="instructionTitle" destination="rsD-ES-shH" id="dJs-A3-4TA"/>
+                        <outlet property="playPauseButton" destination="UlM-9x-VRO" id="MVz-6k-BwU"/>
                     </connections>
                 </controller>
             </objects>
