@@ -12,4 +12,4 @@ https://github.com/corbett/DoIT
 @corbett on Twitter
 
 # Creators
-Created by @corbett and @isobelroe.
+Created by @corbett (Christine Corbett Moran) and @isobelroe (Gloria Kim)
