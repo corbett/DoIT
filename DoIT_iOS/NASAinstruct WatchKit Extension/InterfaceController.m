@@ -22,17 +22,14 @@
 
     // Configure interface objects here.
     NSLog(@"%@ awake with context", self);
-    self.tutorials = @[[[Tutorial alloc] initWithName:@"IKEA" andSteps:@[
+    self.tutorials = @[[[Tutorial alloc] initWithName:@"assembling IKEA" andSteps:@[
                                 [[TutorialStep alloc] initWithTitle:@"Remove film" withImage:[UIImage imageNamed:@"step1"] withInstruction:@"Remove the protective film on the back and edge of the door or drawer front before mounting/assembly." withTimeInSeconds:[NSNumber numberWithInt:50]],
                                 [[TutorialStep alloc] initWithTitle:@"Fit the hinges" withImage:[UIImage imageNamed:@"step2"] withInstruction:@"Assemble the drawer and fit the hinges."  withTimeInSeconds:[NSNumber numberWithInt:200]],
                                 [[TutorialStep alloc] initWithTitle:@"Cure the surface" withImage:[UIImage imageNamed:@"step3"] withInstruction:@"Immediately after having removed the protective film the surface is especially sensitive to scratches. You can increase the surface’s resistance to scratches by curing it."  withTimeInSeconds:[NSNumber numberWithInt:0]],
                                 [[TutorialStep alloc] initWithTitle:@"Soft cloth wash" withImage:[UIImage imageNamed:@"step4"] withInstruction:@"Wash it with a soft cloth, using a mild soap solution (max. 1%). Note! Do not use any cleaners containing alcohol or abrasives."  withTimeInSeconds:[NSNumber numberWithInt:25]],
                                 [[TutorialStep alloc] initWithTitle:@"You are done" withImage:[UIImage imageNamed:@"highfive"] withInstruction:@"Super awesome job. Any comments?"  withTimeInSeconds:[NSNumber numberWithInt:0]]]],
-                       [[Tutorial alloc] initWithName:@"IKEA" andSteps:@[]],
-                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
-                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
-                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
-                       [[Tutorial alloc] initWithName:@"IKEA" andSteps:@[]]
+                       [[Tutorial alloc] initWithName:@"plants on ISS" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"spacewalk" andSteps:@[]],
                        ];
 
     [self.table setNumberOfRows:self.tutorials.count withRowType:@"doITListRowType"];
