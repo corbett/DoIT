@@ -27,16 +27,23 @@
                                 [[TutorialStep alloc] initWithTitle:@"Fit the hinges" withImage:[UIImage imageNamed:@"step2"] withInstruction:@"Assemble the drawer and fit the hinges."],
                                 [[TutorialStep alloc] initWithTitle:@"Cure the surface" withImage:[UIImage imageNamed:@"step3"] withInstruction:@"Immediately after having removed the protective film the surface is especially sensitive to scratches. You can increase the surface’s resistance to scratches by curing it."],
                                 [[TutorialStep alloc] initWithTitle:@"Soft cloth wash" withImage:[UIImage imageNamed:@"step4"] withInstruction:@"Wash it with a soft cloth, using a mild soap solution (max. 1%). Note! Do not use any cleaners containing alcohol or abrasives."],
-                                [[TutorialStep alloc] initWithTitle:@"You are done" withImage:[UIImage imageNamed:@"step5"] withInstruction:@"Super awesome job."]]],
-                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]]];
+                                [[TutorialStep alloc] initWithTitle:@"You are done" withImage:[UIImage imageNamed:@"highfive"] withInstruction:@"Super awesome job."]]],
+                       [[Tutorial alloc] initWithName:@"IKEA" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"NASA" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"IKEA" andSteps:@[]]
+                       
+                       ];
 
     [self.table setNumberOfRows:self.tutorials.count withRowType:@"doITListRowType"];
     [self.tutorials enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         Tutorial* tutorial = (Tutorial*)obj;
         DoITListRowType* row = (DoITListRowType*)[self.table rowControllerAtIndex:idx];
         [row.rowDescription setText:tutorial.name];
-        [row.rowIcon setImageNamed:tutorial.name];
-    
+        row.rowIcon = nil;
+        [row.group setBackgroundImageNamed:tutorial.name];
+        //[row.rowIcon setImageNamed:tutorial.name];
     }];
 
 }

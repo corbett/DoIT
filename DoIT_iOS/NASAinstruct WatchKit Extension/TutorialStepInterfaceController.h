@@ -8,10 +8,15 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
-
+#import "Tutorial.h"
 @interface TutorialStepInterfaceController : WKInterfaceController
+@property (nonatomic,weak) Tutorial *tutorial;
+@property (nonatomic) BOOL isSteppingForward;
 @property (nonatomic,strong) IBOutlet WKInterfaceButton* instructionImageButton;
 @property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionTitle;
 @property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionText;
+@property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionStep;
+
+- (IBAction)goToNextTutorial:(id)sender;
 
 @end

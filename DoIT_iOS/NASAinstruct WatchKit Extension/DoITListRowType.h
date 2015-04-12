@@ -11,4 +11,6 @@
 @interface DoITListRowType : NSObject
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel* rowDescription;
 @property (weak, nonatomic) IBOutlet WKInterfaceImage* rowIcon;
+@property (nonatomic,weak) IBOutlet WKInterfaceGroup *group;
+
 @end

@@ -24,6 +24,24 @@
     return [_tutorialSteps objectAtIndex:_onStep];
 }
 
+-(void) stepForward {
+    _onStep = MIN(_onStep+1, (int)[_tutorialSteps count]);
+}
 
+-(void) stepBack {
+    _onStep = MAX(_onStep-1, 0);
+}
+
+-(BOOL) isLastStep {
+    return (_onStep == [_tutorialSteps count] -1);
+}
+
+-(void)reset {
+    _onStep = 0;
+}
+
+-(int) getTotalSteps {
+    return (int)[_tutorialSteps count];
+}
 
 @end

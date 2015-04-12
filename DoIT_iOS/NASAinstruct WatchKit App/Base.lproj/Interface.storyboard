@@ -10,28 +10,30 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="DoIT" id="qRA-3B-w1q"/>
-                        <separator alignment="left" id="JQk-e9-Rxj"/>
+                        <imageView width="136" height="5" alignment="left" id="cfP-Re-hKb"/>
                         <table alignment="left" id="TNT-mF-NXP">
                             <items>
                                 <tableRow identifier="doITListRowType" id="13w-RJ-DjX" customClass="DoITListRowType">
-                                    <group key="rootItem" width="1" alignment="left" id="vF2-ak-qqh">
+                                    <group key="rootItem" width="1" alignment="left" alpha="0.5499999999999996" radius="14" spacing="5" id="vF2-ak-qqh">
                                         <items>
-                                            <imageView width="35" alignment="left" image="highfive" id="PU6-v4-VJk"/>
-                                            <label alignment="left" text="IKEA" id="edv-w5-aR6"/>
+                                            <label width="124" alignment="left" text="IKEA" textAlignment="center" id="edv-w5-aR6">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
                                         </items>
+                                        <color key="backgroundColor" red="0.050972647964954376" green="0.048706009984016418" blue="0.048841699957847595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="iEg-de-eMf" kind="push" id="Ptf-zB-BM3"/>
                                         </connections>
                                     </group>
                                     <connections>
+                                        <outlet property="group" destination="vF2-ak-qqh" id="L8z-wK-mUC"/>
                                         <outlet property="rowDescription" destination="edv-w5-aR6" id="Ft2-ic-hML"/>
-                                        <outlet property="rowIcon" destination="PU6-v4-VJk" id="wrc-YZ-hJm"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="table" destination="TNT-mF-NXP" id="Ntk-m3-2Ia"/>
                     </connections>
@@ -39,17 +41,28 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Tutorial Step Interface Controller-->
+        <!--tutorialStepInterfaceController-->
         <scene sceneID="4BX-wY-Sit">
             <objects>
-                <controller id="iEg-de-eMf" customClass="TutorialStepInterfaceController">
+                <controller identifier="tutorialStepInterfaceController" id="iEg-de-eMf" customClass="TutorialStepInterfaceController">
                     <items>
-                        <label alignment="left" text="Remove film" id="rsD-ES-shH"/>
-                        <separator alignment="left" id="R8x-Cd-V5k"/>
-                        <button width="1" alignment="left" backgroundImage="step1" id="Xaq-vx-tLN"/>
+                        <label width="136" alignment="left" text="Remove film" textAlignment="center" id="rsD-ES-shH">
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button alignment="center" verticalAlignment="center" backgroundImage="step1" id="Xaq-vx-tLN">
+                            <connections>
+                                <action selector="goToNextTutorial:" destination="iEg-de-eMf" id="2sp-OW-k3j"/>
+                            </connections>
+                        </button>
+                        <label alignment="right" verticalAlignment="bottom" text="Label" id="qxJ-CK-mGA">
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                     </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="instructionImageButton" destination="Xaq-vx-tLN" id="uae-m7-F9q"/>
+                        <outlet property="instructionStep" destination="qxJ-CK-mGA" id="ZuJ-N0-QjU"/>
                         <outlet property="instructionTitle" destination="rsD-ES-shH" id="dJs-A3-4TA"/>
                     </connections>
                 </controller>
@@ -148,4 +161,5 @@
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
 </document>

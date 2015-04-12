@@ -15,4 +15,10 @@
 
 -(instancetype)initWithName:(NSString*)name andSteps:(NSArray*)tutorialSteps;
 -(TutorialStep*) getCurrentStep;
+-(void) stepForward;
+-(void) stepBack;
+-(void) reset;
+-(BOOL) isLastStep;
+-(int) getTotalSteps;
+
 @end

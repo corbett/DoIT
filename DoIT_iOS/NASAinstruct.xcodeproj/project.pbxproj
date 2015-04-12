@@ -21,6 +21,7 @@
 		A539ADFF1AD9AF8300196542 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539ADFD1AD9AF8300196542 /* Interface.storyboard */; };
 		A539AE011AD9AF8300196542 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A539AE001AD9AF8300196542 /* Images.xcassets */; };
 		A539AE041AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A54231DC1ADA1C87007645D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54231DB1ADA1C87007645D8 /* AVFoundation.framework */; };
 		A5DF33231AD9DA5800E16FB4 /* TutorialStepInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */; };
 		A5DF33261AD9E5CE00E16FB4 /* DoITListRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */; };
 		A5DF33291AD9ECA100E16FB4 /* TutorialStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33281AD9ECA100E16FB4 /* TutorialStep.m */; };
@@ -91,6 +92,7 @@
 		A539ADFC1AD9AF8300196542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A539ADFE1AD9AF8300196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A539AE001AD9AF8300196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A54231DB1ADA1C87007645D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A5DF33211AD9DA5800E16FB4 /* TutorialStepInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialStepInterfaceController.h; sourceTree = "<group>"; };
 		A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialStepInterfaceController.m; sourceTree = "<group>"; };
 		A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoITListRowType.h; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54231DC1ADA1C87007645D8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +132,7 @@
 		A539ADB11AD9AF4D00196542 = {
 			isa = PBXGroup;
 			children = (
+				A54231DB1ADA1C87007645D8 /* AVFoundation.framework */,
 				A539ADBC1AD9AF4D00196542 /* NASAinstruct */,
 				A539ADD61AD9AF4D00196542 /* NASAinstructTests */,
 				A539ADE81AD9AF8300196542 /* NASAinstruct WatchKit Extension */,
