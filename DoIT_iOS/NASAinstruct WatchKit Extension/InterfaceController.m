@@ -28,7 +28,11 @@
                                 [[TutorialStep alloc] initWithTitle:@"Cure the surface" withImage:[UIImage imageNamed:@"step3"] withInstruction:@"Immediately after having removed the protective film the surface is especially sensitive to scratches. You can increase the surface’s resistance to scratches by curing it."  withTimeInSeconds:[NSNumber numberWithInt:0]],
                                 [[TutorialStep alloc] initWithTitle:@"Soft cloth wash" withImage:[UIImage imageNamed:@"step4"] withInstruction:@"Wash it with a soft cloth, using a mild soap solution (max. 1%). Note! Do not use any cleaners containing alcohol or abrasives."  withTimeInSeconds:[NSNumber numberWithInt:25]],
                                 [[TutorialStep alloc] initWithTitle:@"You are done" withImage:[UIImage imageNamed:@"highfive"] withInstruction:@"Super awesome job. Any comments?"  withTimeInSeconds:[NSNumber numberWithInt:0]]]],
-                       [[Tutorial alloc] initWithName:@"ISS biology" andSteps:@[]],
+                       [[Tutorial alloc] initWithName:@"ISS biology" andSteps:@[
+                          [[TutorialStep alloc] initWithTitle:@"Remove film" withImage:[UIImage imageNamed:@"plantstep1"] withInstruction:@"Cut single plant specimen from the bottom with scissors." withTimeInSeconds:[NSNumber numberWithInt:15]],
+                          [[TutorialStep alloc] initWithTitle:@"Fit the hinges" withImage:[UIImage imageNamed:@"plantstep2"] withInstruction:@"Place plant specimen in special bottle with the appropriate liquids. Note: Be careful to have a firm grip on the plant stem, as the plant tends to want to float away out of the bottle."  withTimeInSeconds:[NSNumber numberWithInt:45]],
+                          [[TutorialStep alloc] initWithTitle:@"Cure the surface" withImage:[UIImage imageNamed:@"plantstep3"] withInstruction:@"Attach tube with specimen and liquids  on the wall and secure with velcro."  withTimeInSeconds:[NSNumber numberWithInt:360]],
+                          [[TutorialStep alloc] initWithTitle:@"You are done" withImage:[UIImage imageNamed:@"highfive"] withInstruction:@"Super awesome job. Any comments?"  withTimeInSeconds:[NSNumber numberWithInt:0]]]],
                        [[Tutorial alloc] initWithName:@"ISS repairs" andSteps:@[]],
                        [[Tutorial alloc] initWithName:@"ISS gardening" andSteps:@[]],
                        [[Tutorial alloc] initWithName:@"ISS chemistry" andSteps:@[]],
