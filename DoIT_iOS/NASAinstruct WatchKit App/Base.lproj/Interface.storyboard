@@ -62,6 +62,9 @@
                                         <action selector="playPauseOrUnpause:" destination="iEg-de-eMf" id="YIH-kS-PoV"/>
                                     </connections>
                                 </button>
+                                <timer alignment="left" verticalAlignment="bottom" id="gdW-6U-X95">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
                                 <label alignment="right" verticalAlignment="bottom" text="Label" id="qxJ-CK-mGA">
                                     <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
@@ -73,6 +76,7 @@
                     <connections>
                         <outlet property="instructionImageButton" destination="Xaq-vx-tLN" id="uae-m7-F9q"/>
                         <outlet property="instructionStep" destination="qxJ-CK-mGA" id="ZuJ-N0-QjU"/>
+                        <outlet property="instructionTime" destination="gdW-6U-X95" id="BpZ-rC-2ex"/>
                         <outlet property="instructionTitle" destination="rsD-ES-shH" id="dJs-A3-4TA"/>
                         <outlet property="playPauseButton" destination="UlM-9x-VRO" id="MVz-6k-BwU"/>
                     </connections>

@@ -19,6 +19,8 @@
 @property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionTitle;
 @property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionText;
 @property (nonatomic,strong) IBOutlet WKInterfaceLabel* instructionStep;
+@property (nonatomic,strong) IBOutlet WKInterfaceTimer* instructionTime;
+
 @property (nonatomic,strong) AVSpeechSynthesizer *synth;
 @property (nonatomic,strong) AVSpeechUtterance *utterance;
 

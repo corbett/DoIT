@@ -30,7 +30,18 @@
     }
     else {
         [self.instructionStep setHidden:YES];
+        [_instructionTime setHidden:YES];
     }
+    
+    if([tutorialStep.timeInSeconds doubleValue] > 0) {
+        [_instructionTime setDate:[NSDate dateWithTimeIntervalSinceNow:[tutorialStep.timeInSeconds doubleValue]]];
+        [_instructionTime start];
+        
+    }
+    else {
+        [_instructionTime setHidden:YES];
+    }
+    
     [WKInterfaceController openParentApplication:@{@"tutorialStepInstruction":[[_tutorial getCurrentStep] instruction]} reply:nil];
 
     _synth = [[AVSpeechSynthesizer alloc] init];
@@ -46,6 +57,8 @@
      _isSteppingForward=TRUE;
     [_synth stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
     [_playPauseButton setBackgroundImageNamed:@"play"];
+    [_instructionTime stop];
+    [_instructionTime setDate:[NSDate dateWithTimeIntervalSinceNow:[[_tutorial getCurrentStep].timeInSeconds doubleValue]]];
     if(![_tutorial isLastStep]) {
         [_tutorial stepForward];
         [WKInterfaceController openParentApplication:@{@"tutorialStepInstruction":[[_tutorial getCurrentStep] instruction]} reply:nil];
@@ -60,6 +73,8 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    [_instructionTime start];
+
     [super willActivate];
 }
 
@@ -97,6 +112,8 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [_synth stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+    [_instructionTime stop];
+    [_instructionTime setDate:[NSDate dateWithTimeIntervalSinceNow:[[_tutorial getCurrentStep].timeInSeconds doubleValue]]];
     if(!_isSteppingForward) {
         [_tutorial stepBack];
     }

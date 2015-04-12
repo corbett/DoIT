@@ -12,6 +12,6 @@
 @property (nonatomic,strong) NSString* title;
 @property (nonatomic,strong) NSString* instruction;
 @property (nonatomic,strong) UIImage* image;
-
--(instancetype)initWithTitle:(NSString*)title withImage:(UIImage*)image withInstruction:(NSString*)instruction;
+@property (nonatomic,strong) NSNumber *timeInSeconds;
+-(instancetype)initWithTitle:(NSString*)title withImage:(UIImage*)image withInstruction:(NSString*)instruction withTimeInSeconds:(NSNumber*)timeInSeconds;
 @end

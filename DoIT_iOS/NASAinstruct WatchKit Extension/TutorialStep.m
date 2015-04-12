@@ -10,12 +10,13 @@
 
 @implementation TutorialStep
 
--(instancetype)initWithTitle:(NSString*)title withImage:(UIImage*)image withInstruction:(NSString*)instruction {
+-(instancetype)initWithTitle:(NSString*)title withImage:(UIImage*)image withInstruction:(NSString*)instruction withTimeInSeconds:(NSNumber*)timeInSeconds {
     self = [super init];
     if(self) {
         _title = title;
         _image = [image copy];
         _instruction = instruction;
+        _timeInSeconds = timeInSeconds;
     }
     return self;
 }
