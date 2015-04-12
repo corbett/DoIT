@@ -63,10 +63,10 @@
                                         <action selector="playPauseOrUnpause:" destination="iEg-de-eMf" id="YIH-kS-PoV"/>
                                     </connections>
                                 </button>
-                                <timer alignment="left" verticalAlignment="bottom" id="gdW-6U-X95">
+                                <timer alignment="left" verticalAlignment="center" id="gdW-6U-X95">
                                     <calendarUnit key="units" minute="YES" second="YES"/>
                                 </timer>
-                                <label alignment="right" verticalAlignment="bottom" text="Label" id="qxJ-CK-mGA">
+                                <label alignment="right" verticalAlignment="center" text="Label" id="qxJ-CK-mGA">
                                     <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
                             </items>
