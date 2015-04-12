@@ -7,8 +7,6 @@
 //
 
 #import "TutorialStepInterfaceController.h"
-#import <AVFoundation/AVFoundation.h>
-
 #import "Tutorial.h"
 #import "TutorialStep.h"
 @interface TutorialStepInterfaceController ()
@@ -33,15 +31,16 @@
     else {
         [self.instructionStep setHidden:YES];
     }
-    AVSpeechUtterance *utterance = [AVSpeechUtterance
-                                    speechUtteranceWithString:tutorialStep.instruction];
-    AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc] init];
-    [synth pauseSpeakingAtBoundary:AVSpeechBoundaryWord];
-    [synth speakUtterance:utterance];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:tutorialStep.instruction];
+    _synth = [[AVSpeechSynthesizer alloc] init];
+    
+    [utterance setRate:0.2];
+    [_synth speakUtterance:utterance];
 }
 
 - (IBAction)goToNextTutorial:(id)sender  {
      _isSteppingForward=TRUE;
+    [_synth stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
     if(![_tutorial isLastStep]) {
         
         [_tutorial stepForward];
@@ -63,6 +62,7 @@
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
+    [_synth stopSpeakingAtBoundary:AVSpeechBoundaryWord];
     if(!_isSteppingForward) {
         [_tutorial stepBack];
     }
