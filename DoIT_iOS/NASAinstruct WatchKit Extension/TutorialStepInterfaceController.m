@@ -31,11 +31,14 @@
     else {
         [self.instructionStep setHidden:YES];
     }
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:tutorialStep.instruction];
+
     _synth = [[AVSpeechSynthesizer alloc] init];
+    
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:tutorialStep.instruction];
     
     [utterance setRate:0.2];
     [_synth speakUtterance:utterance];
+
 }
 
 - (IBAction)goToNextTutorial:(id)sender  {
@@ -56,6 +59,7 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    
     [super willActivate];
 }
 
