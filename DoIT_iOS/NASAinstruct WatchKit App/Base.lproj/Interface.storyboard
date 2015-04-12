@@ -31,11 +31,6 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <button width="1" alignment="left" title="Teach me" id="tyj-gg-vYd">
-                            <connections>
-                                <segue destination="iEg-de-eMf" kind="push" id="exI-tP-lEJ"/>
-                            </connections>
-                        </button>
                     </items>
                     <connections>
                         <outlet property="table" destination="TNT-mF-NXP" id="Ntk-m3-2Ia"/>
@@ -51,11 +46,7 @@
                     <items>
                         <label alignment="left" text="Remove film" id="rsD-ES-shH"/>
                         <separator alignment="left" id="R8x-Cd-V5k"/>
-                        <button width="1" alignment="left" backgroundImage="step1" id="Xaq-vx-tLN">
-                            <connections>
-                                <segue destination="64h-Ik-FsS" kind="push" id="rEq-Hj-w5f"/>
-                            </connections>
-                        </button>
+                        <button width="1" alignment="left" backgroundImage="step1" id="Xaq-vx-tLN"/>
                     </items>
                     <connections>
                         <outlet property="instructionImageButton" destination="Xaq-vx-tLN" id="uae-m7-F9q"/>
@@ -63,7 +54,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="423" y="360"/>
+            <point key="canvasLocation" x="432" y="345"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="SO4-NC-Wms">
@@ -80,7 +71,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="593" y="351"/>
+            <point key="canvasLocation" x="697" y="70"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="FWc-dv-AS2">
@@ -97,7 +88,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="766" y="351"/>
+            <point key="canvasLocation" x="928" y="90"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="cFT-lV-bcA">
@@ -114,7 +105,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="961" y="351"/>
+            <point key="canvasLocation" x="1109" y="90"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="GGm-0a-N96">
@@ -131,7 +122,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1128" y="348"/>
+            <point key="canvasLocation" x="1347" y="90"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -157,7 +148,4 @@
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ptf-zB-BM3"/>
-    </inferredMetricsTieBreakers>
 </document>

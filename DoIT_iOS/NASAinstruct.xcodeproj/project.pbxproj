@@ -23,6 +23,8 @@
 		A539AE041AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539ADE71AD9AF8300196542 /* NASAinstruct WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5DF33231AD9DA5800E16FB4 /* TutorialStepInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */; };
 		A5DF33261AD9E5CE00E16FB4 /* DoITListRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */; };
+		A5DF33291AD9ECA100E16FB4 /* TutorialStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF33281AD9ECA100E16FB4 /* TutorialStep.m */; };
+		A5DF332C1AD9F11800E16FB4 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF332B1AD9F11800E16FB4 /* Tutorial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialStepInterfaceController.m; sourceTree = "<group>"; };
 		A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoITListRowType.h; sourceTree = "<group>"; };
 		A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoITListRowType.m; sourceTree = "<group>"; };
+		A5DF33271AD9ECA100E16FB4 /* TutorialStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialStep.h; sourceTree = "<group>"; };
+		A5DF33281AD9ECA100E16FB4 /* TutorialStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialStep.m; sourceTree = "<group>"; };
+		A5DF332A1AD9F11800E16FB4 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		A5DF332B1AD9F11800E16FB4 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,10 @@
 				A5DF33251AD9E5CE00E16FB4 /* DoITListRowType.m */,
 				A5DF33211AD9DA5800E16FB4 /* TutorialStepInterfaceController.h */,
 				A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */,
+				A5DF33271AD9ECA100E16FB4 /* TutorialStep.h */,
+				A5DF33281AD9ECA100E16FB4 /* TutorialStep.m */,
+				A5DF332A1AD9F11800E16FB4 /* Tutorial.h */,
+				A5DF332B1AD9F11800E16FB4 /* Tutorial.m */,
 				A539ADEF1AD9AF8300196542 /* NotificationController.h */,
 				A539ADF01AD9AF8300196542 /* NotificationController.m */,
 				A539ADF21AD9AF8300196542 /* Images.xcassets */,
@@ -410,6 +420,8 @@
 				A539ADEE1AD9AF8300196542 /* InterfaceController.m in Sources */,
 				A5DF33261AD9E5CE00E16FB4 /* DoITListRowType.m in Sources */,
 				A5DF33231AD9DA5800E16FB4 /* TutorialStepInterfaceController.m in Sources */,
+				A5DF33291AD9ECA100E16FB4 /* TutorialStep.m in Sources */,
+				A5DF332C1AD9F11800E16FB4 /* Tutorial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

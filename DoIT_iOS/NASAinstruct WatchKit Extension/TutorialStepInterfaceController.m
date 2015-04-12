@@ -7,7 +7,8 @@
 //
 
 #import "TutorialStepInterfaceController.h"
-
+#import "Tutorial.h"
+#import "TutorialStep.h"
 @interface TutorialStepInterfaceController ()
 
 @end
@@ -17,9 +18,12 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
-    NSString *imageName = (NSString*)context;
+    Tutorial *tutorial = (Tutorial*)context;
     
-    [self.instructionImageButton setBackgroundImageNamed:imageName];
+    TutorialStep *tutorialStep = [tutorial getCurrentStep];
+    
+    [self.instructionImageButton setBackgroundImage:tutorialStep.image];
+    [self.instructionTitle setText:tutorialStep.title];
     
     // Configure interface objects here.
 }
