@@ -6,5 +6,7 @@ This project is to allow formatting of tutorials, instructions, and checklists i
 
 # More information
 https://2015.spaceappschallenge.org/project/instruction-and-tutorial-following-on-mobile/
+
 https://github.com/corbett/DoIT
+
 @corbett on Twitter
