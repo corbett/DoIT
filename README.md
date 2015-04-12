@@ -10,3 +10,6 @@ https://2015.spaceappschallenge.org/project/instruction-and-tutorial-following-o
 https://github.com/corbett/DoIT
 
 @corbett on Twitter
+
+# Creators
+Created by @corbett and @isobelroe.
