@@ -21,12 +21,11 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <rect key="frame" x="122" y="28" width="157" height="21"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" text="Control the tutorial from your iWatch, and see detailed text instructions read here for reference." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-hL-Djq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" text="Control the tutorial from your iWatch, and see detailed text instructions here for reference." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-hL-Djq">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
