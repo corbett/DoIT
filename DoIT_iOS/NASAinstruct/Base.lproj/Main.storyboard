@@ -15,11 +15,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed instructions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-Pf-Av6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="28" width="157" height="21"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-hL-Djq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="49" width="400" height="751"/>
+                                </variation>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="Wry-hL-Djq" secondAttribute="height" id="7Lh-Ua-boW"/>
+                            <constraint firstAttribute="width" secondItem="Wry-hL-Djq" secondAttribute="width" id="QSn-SH-xoj"/>
+                            <constraint firstItem="Wry-hL-Djq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="cP4-sh-1xz"/>
+                            <constraint firstAttribute="centerX" secondItem="OSv-Pf-Av6" secondAttribute="centerX" constant="-0.5" id="fhB-dX-k3y"/>
+                            <constraint firstItem="OSv-Pf-Av6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nZy-op-IlF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OSv-Pf-Av6"/>
+                                <exclude reference="Wry-hL-Djq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="fhB-dX-k3y"/>
+                                <exclude reference="nZy-op-IlF"/>
+                                <exclude reference="7Lh-Ua-boW"/>
+                                <exclude reference="QSn-SH-xoj"/>
+                                <exclude reference="cP4-sh-1xz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="OSv-Pf-Av6"/>
+                                <include reference="Wry-hL-Djq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fhB-dX-k3y"/>
+                                <include reference="nZy-op-IlF"/>
+                                <include reference="7Lh-Ua-boW"/>
+                                <include reference="QSn-SH-xoj"/>
+                                <include reference="cP4-sh-1xz"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Wry-hL-Djq" id="TwV-eC-1aj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="324" y="207"/>
         </scene>
     </scenes>
 </document>

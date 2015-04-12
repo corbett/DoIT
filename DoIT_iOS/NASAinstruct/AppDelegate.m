@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 @interface AppDelegate ()
 
 @end
@@ -42,4 +41,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo
+             reply:(void (^)(NSDictionary *replyInfo))reply {
+    NSLog(@"user info in app %@",[userInfo objectForKey:@"tutorialStepInstruction"]);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TutorialStepDisplay" object:nil userInfo:userInfo];
+}
 @end

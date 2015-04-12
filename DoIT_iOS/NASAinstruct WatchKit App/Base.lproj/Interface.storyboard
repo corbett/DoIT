@@ -50,7 +50,7 @@
                             <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <button alignment="center" verticalAlignment="center" backgroundImage="step1" id="Xaq-vx-tLN">
+                        <button width="1" height="0.59999999999999998" alignment="center" verticalAlignment="center" backgroundImage="step1" id="Xaq-vx-tLN">
                             <connections>
                                 <action selector="goToNextTutorial:" destination="iEg-de-eMf" id="2sp-OW-k3j"/>
                             </connections>

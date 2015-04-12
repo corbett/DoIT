@@ -25,11 +25,13 @@
     [self.instructionImageButton setBackgroundImage:tutorialStep.image];
     [self.instructionTitle setText:tutorialStep.title];
     if(![_tutorial isLastStep]) {
+
         [self.instructionStep setText:[NSString stringWithFormat:@"%d/%d",[_tutorial onStep]+1,[_tutorial getTotalSteps]-1]];
     }
     else {
         [self.instructionStep setHidden:YES];
     }
+    [WKInterfaceController openParentApplication:@{@"tutorialStepInstruction":[[_tutorial getCurrentStep] instruction]} reply:nil];
 
     _synth = [[AVSpeechSynthesizer alloc] init];
     _synth.delegate = self;
@@ -43,10 +45,10 @@
 - (IBAction)goToNextTutorial:(id)sender  {
      _isSteppingForward=TRUE;
     [_synth stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    [_playPauseButton setBackgroundImageNamed:@"play"];
     if(![_tutorial isLastStep]) {
-        
         [_tutorial stepForward];
-       
+        [WKInterfaceController openParentApplication:@{@"tutorialStepInstruction":[[_tutorial getCurrentStep] instruction]} reply:nil];
         [self pushControllerWithName:@"tutorialStepInterfaceController" context:_tutorial];
     }
     else {

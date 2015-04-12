@@ -93,6 +93,8 @@
 		A539ADFE1AD9AF8300196542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A539AE001AD9AF8300196542 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A54231DB1ADA1C87007645D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A5805A8E1ADAD86800532125 /* NASAinstruct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NASAinstruct.entitlements; sourceTree = "<group>"; };
+		A5805A8F1ADAD87800532125 /* NASAinstruct WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "NASAinstruct WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A5DF33211AD9DA5800E16FB4 /* TutorialStepInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialStepInterfaceController.h; sourceTree = "<group>"; };
 		A5DF33221AD9DA5800E16FB4 /* TutorialStepInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialStepInterfaceController.m; sourceTree = "<group>"; };
 		A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoITListRowType.h; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		A539ADBC1AD9AF4D00196542 /* NASAinstruct */ = {
 			isa = PBXGroup;
 			children = (
+				A5805A8E1ADAD86800532125 /* NASAinstruct.entitlements */,
 				A539ADC11AD9AF4D00196542 /* AppDelegate.h */,
 				A539ADC21AD9AF4D00196542 /* AppDelegate.m */,
 				A539ADC41AD9AF4D00196542 /* ViewController.h */,
@@ -196,6 +199,7 @@
 		A539ADE81AD9AF8300196542 /* NASAinstruct WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5805A8F1ADAD87800532125 /* NASAinstruct WatchKit Extension.entitlements */,
 				A539ADEC1AD9AF8300196542 /* InterfaceController.h */,
 				A539ADED1AD9AF8300196542 /* InterfaceController.m */,
 				A5DF33241AD9E5CE00E16FB4 /* DoITListRowType.h */,
@@ -325,6 +329,12 @@
 				TargetAttributes = {
 					A539ADB91AD9AF4D00196542 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = P7MA44J24M;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A539ADD21AD9AF4D00196542 = {
 						CreatedOnToolsVersion = 6.3;
@@ -332,6 +342,12 @@
 					};
 					A539ADE61AD9AF8300196542 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = P7MA44J24M;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A539ADF51AD9AF8300196542 = {
 						CreatedOnToolsVersion = 6.3;
@@ -563,9 +579,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NASAinstruct/NASAinstruct.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NASAinstruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -574,9 +594,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NASAinstruct/NASAinstruct.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NASAinstruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -650,6 +674,9 @@
 		A539AE091AD9AF8300196542 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NASAinstruct WatchKit Extension/NASAinstruct WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -657,6 +684,7 @@
 				INFOPLIST_FILE = "NASAinstruct WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -664,9 +692,13 @@
 		A539AE0A1AD9AF8300196542 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NASAinstruct WatchKit Extension/NASAinstruct WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NASAinstruct WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

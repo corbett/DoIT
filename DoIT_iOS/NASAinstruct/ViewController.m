@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -17,11 +16,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(tutorialStepDisplay:)
+                                                 name:@"TutorialStepDisplay"
+                                               object:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)tutorialStepDisplay:(NSNotification *) notification {
+    NSString* instruction = [[notification userInfo] objectForKey:@"tutorialStepInstruction"];
+    _textView.text = instruction;
+}
+
+
 
 @end
